@@ -1,0 +1,16 @@
+@mixin stars($nb) {
+  i {
+    font-size: 2rem;
+    margin: 0 1rem;
+    &:nth-child(-n + #{$nb}) {
+      color: var(--light);
+    }
+  }
+}
+
+@mixin footer-btn {
+  flex-basis: 5rem;
+  color: white;
+  background: linear-gradient(90deg, var(--primary), var(--light));
+  padding: 0.5rem;
+}
